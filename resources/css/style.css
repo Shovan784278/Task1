@@ -23,11 +23,21 @@ ul li{
     list-style-type: none;
 }
 
+.clearfix::after{
+
+    content: "";
+    display: table;
+    clear: both;
+    height: 0;
+    visibility: hidden;
+}
+
+
 
 /* Reusable component */
 
 .row {
-    max-width: 71.25rem; /* 1140px / 16px = 71.25rem */
+    max-width: 77.25rem; /* 1140px / 16px = 71.25rem */
     margin: 0 auto;
 }
 
@@ -41,7 +51,9 @@ ul li{
     border-radius: 0.125rem; /* 2px / 16px = 0.125rem */
     display: inline-block;
     text-transform: uppercase;
+    margin-bottom: 3rem;
     margin-top: 5rem; /* 80px / 16px = 5rem */
+    margin-right: 2rem;
 }
 
 .btn:hover {
@@ -49,12 +61,51 @@ ul li{
     color: #fff; /* Change text color on hover */
 }
 
+section{
+    
+    padding: 7rem 0;
+    background-color: #fff;
+
+}
+
+.box {
+
+    padding: 1%;
+
+}
+
+.box h5 {
+
+    text-align: center;
+    margin-top: 2rem;
+    font-family: 'Raleway', sans-serif;
+    color: #151516;
+    font-weight: 520;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+
+}
+
+.box p {
+
+    text-align: center;
+    font-family: 'Raleway', sans-serif bold;
+    color: #585656;
+    font-weight: -2;
+    font-size: 1.05rem;
+    padding: 1rem;
+
+}
+
+
+
+
 
 /* HEADER */
 
 header {
     background-image: url('../img/task_1_hero_background.jpg');
-    height: 100vh; 
+    height: 110vh; 
     background-size: cover;
     
     background-repeat: no-repeat;
@@ -68,6 +119,24 @@ header {
     width: auto;
     margin-top: 2.1875rem; /* 35px / 16px = 2.1875rem */
     float: left;
+}
+
+
+/* feature section */
+
+.feature-icon {
+
+    height: 4rem;
+    display: block;
+    margin: auto;
+}
+
+
+
+
+.feature-section {
+
+    padding: 5rem 0;
 }
 
 
